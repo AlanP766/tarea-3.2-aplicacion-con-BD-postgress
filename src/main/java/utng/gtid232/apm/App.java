@@ -29,17 +29,10 @@ public class App extends Application {
         stage.show();
     }
 
-    /**
-     * Permite cambiar la vista/pantalla actual pasando solo el nombre del FXML (sin extensión)
-     * Ejemplo: App.setRoot("dashboard");
-     */
     public static void setRoot(String fxml) throws IOException {
         escena.setRoot(loadFXML(fxml));
     }
 
-    /**
-     * Método auxiliar para cargar cualquier archivo FXML desde el paquete
-     */
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/utng/gtid232/apm/" + fxml + ".fxml"));
         return fxmlLoader.load();
