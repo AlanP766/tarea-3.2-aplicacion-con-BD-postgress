@@ -2,7 +2,6 @@ package utng.gtid232.apm.dao;
 
 import utng.gtid232.apm.conexion.ConexionBD;
 import utng.gtid232.apm.modelo.Criterio;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -13,8 +13,8 @@ public class ConexionBD {
     private static ConexionBD instancia;
  
     private static final String URL = "jdbc:postgresql://localhost:5432/auditoriasdb";
-    private static final String USUARIO = "Admin";
-    private static final String PASSWORD = "Admin";
+    private static final String USUARIO = "postgres";
+    private static final String PASSWORD = "766";
  
     private Connection conexion;
  
@@ -41,5 +41,7 @@ public class ConexionBD {
         } catch (SQLException e) {
             System.err.println("Error al cerrar la conexion: " + e.getMessage());
         }
+
+        
     }
 }
